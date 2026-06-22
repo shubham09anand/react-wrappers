@@ -17,6 +17,7 @@ import Tooltip from "./components/common/ui/Tooltip";
 import Inputwrapper from "./components/common/ui/Inputwrapper";
 import { Toaster } from "sonner";
 import ProfileImage from './components/common/ui/ProfileImage';
+import ComponentWrapper from "./components/common/ui/ComponentWrapper";
 
 export default function App() {
 
@@ -39,17 +40,17 @@ export default function App() {
 
 	return (
 		<>
+			<Alert />
 			<Toaster richColors position="top-right" />
-			<div className="flex">
+			<ComponentWrapper className="flex">
 				{/* <Sidebar/> */}
 				<div className="flex-1">
-					<Header />
-					<div className="min-h-screen bg-[#F3F0FF] flex items-center justify-center p-6 py-20">
-						<div className="w-full max-w-lg bg-white rounded-[40px] shadow-xl">
+					<div className="min-h-screen flex items-center justify-center p-6 py-20">
+						<div className="w-full max-w-lg rounded-[40px] shadow-xl">
 							{/* Header */}
 							<div className="px-6 pb-4">
 								<ProfileImage
-									// src={'https://i.pinimg.com/736x/e0/c8/99/e0c8997b798f7eee41347781a624c283.jpg'}
+									src={'https://i.pinimg.com/736x/ec/6a/80/ec6a80f3565d3936d355036109f5fece.jpg'}
 									name={'Brad Pitt'}
 									variantClass={'mt-10'}
 								/>
@@ -84,7 +85,7 @@ export default function App() {
 								{tasks.map((task) => (
 									<div
 										key={task?.id}
-										className="bg-white border border-gray-100 p-4 rounded-2xl shadow-sm flex items-center justify-between"
+										className="border border-gray-100 p-4 rounded-2xl shadow-sm flex items-center justify-between"
 									>
 										<div className="flex items-center gap-4 px-4">
 											<Switch value={task?.completed} actFunc={() => handleRadioCheck(task?.id)} />
@@ -110,7 +111,7 @@ export default function App() {
 					</div>
 					{/* <Footer /> */}
 				</div>
-			</div>
+			</ComponentWrapper>
 		</>
 	);
 }

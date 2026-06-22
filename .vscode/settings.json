@@ -1,4 +1,29 @@
 {
-  "editor.formatOnSave": true,
-  "editor.tabSize": 5
+	"editor.formatOnSave": true,
+	"editor.tabSize": 5,
+	"editor.fontSize": 20,
+	"editor.wordWrap": "off",
+	"editor.minimap.enabled": false,
+	"editor.linkedEditing": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": true,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 3000,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"terminal.integrated.fontSize": 18,
+	"emmet.triggerExpansionOnTab": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.smoothScrolling": true,
+	"workbench.startupEditor": "none",
+	"breadcrumbs.enabled": true,
+	"editor.renderWhitespace": "selection",
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"tailwindCSS.emmetCompletions": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.inlineSuggest.syntaxHighlightingEnabled": true
 }

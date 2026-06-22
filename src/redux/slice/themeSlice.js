@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
      font: "normal",
      baseFontMultiplier: 16,
-     mode: "normal",
+     mode: "dark",
 };
 
 export const themeSlice = createSlice({
